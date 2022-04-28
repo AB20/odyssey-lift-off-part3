@@ -4,6 +4,8 @@ const typeDefs = gql`
   type Query {
     "Query to get tracks array for the homepage grid"
     tracksForHome: [Track!]!
+    "Query to return a single track"
+    track: Track
   }
 
   "A track is a group of Modules that teaches about a specific topic"
