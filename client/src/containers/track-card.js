@@ -9,10 +9,10 @@ import {Link} from '@reach/router';
  * for each track populating the tracks grid homepage.
  */
 const TrackCard = ({ track }) => {
-  const { title, thumbnail, author, length, modulesCount } = track;
+  const { title, thumbnail, author, length, modulesCount, id } = track;
 
   return (
-    <CardContainer>
+    <CardContainer to={`/track/${id}`}>
       <CardContent>
         <CardImageContainer>
           <CardImage src={thumbnail} alt={title} />
